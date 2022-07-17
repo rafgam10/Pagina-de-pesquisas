@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="titulo">
+        <h1>Cadastro</h1>
+        <p>Coloque todos as infomações no Cadastro</p>
+    </div>
+
+    <form method="post" action="">
+        <fieldset>
+            <div>
+                <label for="">Nome</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+            <div>
+                <label for="">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome">
+            </div>
+        </fieldset>
+
+        <div>
+            <label for="">Email</label>
+            <input type="email" name="email" id="email">
+            <label for="">Senha</label>
+            <input type="password" name="senha" id="senha">
+        </div>
+
+        <div>
+            <label>Qual é seu genero?</label>
+            <label>
+                <input type="radio" name="homem" value="homem">Homem
+            </label>    
+            <label>
+                <input type="radio" name="mulher" value="mulher">Mulher
+            </label>
+            <label>
+                <input type="radio" name="outro" value="outro">Outros...   
+            </label>
+        </div>
+
+        <div>
+            <label for="">Como podemos ter chamar?</label>
+            <select id="senioridade">
+                <option selected disabled>Selecione</option>
+                <option>Sr. </option>
+                <option>Sra.</option>
+            </select>
+        </div>
+
+        <fieldset>
+            <div>
+                <label for="">Selecione se seu nome é feminino ou masculino:</label><br><br>
+                <input type="radio" id="femin1no" name="femin1no" value="feminino">
+                <label for="femin1no">Feminino</label>
+                <input type="radio" id="masculin0" name="masculin0" value="masculino">
+                <label for="masculin0">Masculino</label>
+            </div>
+        </fieldset>
+
+        <div>
+            <br>
+            <label for="">Falar um pouco sobre você.</label>
+            <textarea style="width: 26em;" name="experiencia" id="experiencia" row="6"></textarea>
+        </div>
+
+        <button type="submit">Entrar</button>
+    </form>
+
+</body>
+</html>
