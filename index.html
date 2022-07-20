@@ -9,32 +9,32 @@
 </head>
 <body>
     
-    <div class="titulo">
-        <h1>Cadastro</h1>
-        <p>Coloque todos as infomações no Cadastro</p>
+    <div >
+        <h1 id="titulo">Cadastro</h1>
+        <p id="subtitulo">Coloque todos as infomações no Cadastro</p>
     </div>
 
     <form method="post" action="">
-        <fieldset>
+        <fieldset class="grupo">
             <div>
-                <label for="">Nome</label>
-                <input type="text" name="nome" id="nome">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
             </div>
             <div>
-                <label for="">Sobrenome</label>
-                <input type="text" name="sobrenome" id="sobrenome">
+                <label for="sobrenome"><strong>Sobrenome</strong> </label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
             </div>
         </fieldset>
 
-        <div>
-            <label for="">Email</label>
-            <input type="email" name="email" id="email">
-            <label for="">Senha</label>
-            <input type="password" name="senha" id="senha">
+        <div class="campo">
+            <label for="email"><strong>Email</strong> </label>
+            <input type="email" name="email" id="email" required>
+            <label for="senha"><strong>Senha</strong></label>
+            <input type="password" name="senha" id="senha" required>
         </div>
 
-        <div>
-            <label>Qual é seu genero?</label>
+        <div class="campo">
+            <label><strong>Qual é seu genero?</strong></label>
             <label>
                 <input type="radio" name="homem" value="homem">Homem
             </label>    
@@ -46,8 +46,8 @@
             </label>
         </div>
 
-        <div>
-            <label for="">Como podemos ter chamar?</label>
+        <div class="campo">
+            <label for="senioridade"><strong>Como podemos ter chamar?</strong></label>
             <select id="senioridade">
                 <option selected disabled>Selecione</option>
                 <option>Sr. </option>
@@ -55,9 +55,9 @@
             </select>
         </div>
 
-        <fieldset>
-            <div>
-                <label for="">Selecione se seu nome é feminino ou masculino:</label><br><br>
+        <fieldset class="grupo ">
+            <div id="check">
+                <label><strong>Selecione se seu nome é feminino ou masculino:</strong></label><br><br>
                 <input type="radio" id="femin1no" name="femin1no" value="feminino">
                 <label for="femin1no">Feminino</label>
                 <input type="radio" id="masculin0" name="masculin0" value="masculino">
@@ -65,13 +65,13 @@
             </div>
         </fieldset>
 
-        <div>
+        <div class="campo">
             <br>
-            <label for="">Falar um pouco sobre você.</label>
+            <label><strong> Falar um pouco sobre você.</strong></label>
             <textarea style="width: 26em;" name="experiencia" id="experiencia" row="6"></textarea>
         </div>
 
-        <button type="submit">Entrar</button>
+        <button class="botao" type="submit">Entrar</button>
     </form>
 
 </body>
